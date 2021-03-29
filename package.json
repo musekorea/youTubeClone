@@ -1,0 +1,22 @@
+{
+  "name": "youTubeClone",
+  "version": "1.0.0",
+  "description": "Cloneing Youtube with Vanilla JS &amp; Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musekorea/youTubeClone.git"
+  },
+  "author": "Moya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/musekorea/youTubeClone/issues"
+  },
+  "homepage": "https://github.com/musekorea/youTubeClone#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
