@@ -10,9 +10,10 @@ const USERS = '/users';
 const USER_DETAIL = '/:id';
 const EDIT_PROFILE = '/edit-profile';
 const CHANGE_PASSWORD = '/change-password';
+const TEST = '/test';
 
 //=====================VIDEOS=======================
-const VIDEOS = '/viedos';
+const VIDEOS = '/videos';
 const VIDEO_DETAIL = '/:id';
 const UPLOAD = '/upload';
 const EDIT_VIDEO = '/:id/edit';
@@ -33,6 +34,7 @@ const routes = {
   upload: UPLOAD,
   editVideo: EDIT_VIDEO,
   deleteVideo: DELETE_VIDEO,
+  test: TEST,
 };
 
 export default routes;
