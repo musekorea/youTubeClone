@@ -2,11 +2,11 @@ export const homeController = (req, res) =>
   res.render('home', { pageName: 'Home' });
 
 export const searchController = (req, res) => {
-  //console.log(req.url, req.query, req.query.term);
-  //const searchingBy = req.query.term;
-  const {
+  const searchingBy = req.query.term;
+  console.log(req);
+  /* const {
     query: { term: searchingBy },
-  } = req;
+  } = req; */
   res.render('search', { pageName: 'Search', searchingBy: searchingBy });
 };
 
