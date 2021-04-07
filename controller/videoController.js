@@ -1,5 +1,7 @@
+import { videos } from '../db';
+
 export const homeController = (req, res) =>
-  res.render('home', { pageName: 'Home' });
+  res.render('home', { pageName: 'Home', videos: videos });
 
 export const searchController = (req, res) => {
   const searchingBy = req.query.term;
