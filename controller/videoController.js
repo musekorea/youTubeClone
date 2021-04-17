@@ -25,6 +25,7 @@ export const searchController = (req, res) => {
 
 export const videoController = (req, res) =>
   res.render('videos', { pageName: 'Videos' });
+
 export const getUploadController = (req, res) =>
   res.render('upload', { pageName: 'Upload' });
 export const postUploadController = async (req, res) => {
@@ -41,8 +42,16 @@ export const postUploadController = async (req, res) => {
 
   res.redirect(routes.videoDetail(newVideo.id));
 };
-export const videoDetailController = (req, res) =>
-  res.render('videoDetail', { pageName: 'Video Detail' });
+export const videoDetailController = async (req, res) => {
+  const id = req.params.id;
+  try {
+    const video = await Video.findById(id);
+    res.render('videoDetail', { pageName: 'Video Detail', video });
+  } catch (error) {
+    console.log(error);
+    res.redirect(routes.home);
+  }
+};
 export const editVideoController = (req, res) =>
   res.render('editVideo', { pageName: 'Edit Video' });
 export const deleteVideoController = (req, res) =>
