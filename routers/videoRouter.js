@@ -6,7 +6,8 @@ import {
   getUploadController,
   postUploadController,
   deleteVideoController,
-  editVideoController,
+  getEditVideoController,
+  postEditVideoController,
   videoDetailController,
 } from '../controller/videoController';
 
@@ -18,7 +19,9 @@ videoRouter.get(routes.upload, getUploadController);
 videoRouter.post(routes.upload, uploadVideo, postUploadController);
 
 videoRouter.get(routes.videoDetail(), videoDetailController);
-videoRouter.get(routes.editVideo, editVideoController);
+
+videoRouter.get(routes.editVideo(), getEditVideoController);
+videoRouter.post(routes.editVideo(), postEditVideoController);
 videoRouter.get(routes.deleteVideo, deleteVideoController);
 
 export default videoRouter;
