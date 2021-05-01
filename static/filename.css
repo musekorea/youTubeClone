@@ -1,0 +1,15 @@
+body {
+  background-color: red; }
+
+body:-webkit-full-screen {
+  width: 100vw;
+  height: 100vh; }
+
+body:-ms-fullscreen {
+  width: 100vw;
+  height: 100vh; }
+
+body:fullscreen {
+  width: 100vw;
+  height: 100vh; }
+
