@@ -136,18 +136,38 @@ a {
 * {
   box-sizing: border-box; }
 
+body {
+  padding-left: 180px; }
+
+aside {
+  padding: 10px;
+  height: 100vh;
+  width: 170px;
+  background-color: #f9f9f9;
+  float: left;
+  margin-right: 10px;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  border-radius: 10px; }
+
 /*======partials=======*/
+body {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center; }
+
 .header {
   width: 100%;
   height: 60px;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
   position: fixed;
   top: 0;
-  background-color: white; }
+  left: 0;
+  background-color: #f8c7c1; }
 
 .headerLogo {
   font-weight: 600;
@@ -167,13 +187,96 @@ a {
   padding: 4px;
   border: none; }
 
-.joinLogin ul {
+.joinLoginContainer ul {
   display: flex; }
 
-.joinLogin ul li {
+.joinLoginContainer ul li {
   margin: 10px; }
+
+.joinBox {
+  border-radius: 30px;
+  width: 70px;
+  padding: 5px 10px;
+  background-color: #70c5c0;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+  text-align: center; }
+
+.joinBox a {
+  text-decoration: none;
+  color: white; }
+
+.loginBox {
+  border-radius: 30px;
+  width: 70px;
+  padding: 5px 10px;
+  background-color: #70c5c0;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+  text-align: center; }
+
+.loginBox a {
+  text-decoration: none;
+  color: white; }
+
+.socialLogin {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px; }
+
+.socialLogin button {
+  margin: 5px;
+  border-radius: 30px; }
+
+body {
+  padding-bottom: 70px; }
+
+.footer {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #f8c7c1; }
 
 /*======pages=======*/
 .videos {
-  display: grid; }
+  margin-right: 10px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 295px);
+  grid-template-rows: 260px 260px 260px;
+  background-color: #f9f9f9;
+  border-radius: 10px; }
+
+.videoBlock {
+  margin-right: 6px; }
+
+.join-form-container {
+  width: 400px;
+  height: 500px;
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.join-form-container form {
+  display: flex;
+  flex-direction: column; }
+
+.login-form-container {
+  width: 400px;
+  height: 500px;
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.login-form-container form {
+  display: flex;
+  flex-direction: column; }
 

@@ -9,13 +9,13 @@ header.header
       i.fas.fa-search
       //링크처리 안되있음 
         
-  .header_column.joinLogin
+  .header_column.joinLoginContainer
     ul    
       if !user.isAuthenticated
-        li 
-          a(href=routes.join) Join 
-        li
-          a(href=routes.login) Log In
+        li.joinBox
+          a(href=routes.join) JOIN
+        li.loginBox
+          a(href=routes.login) LOGIN
       else 
         li 
           a(href='/videos'+routes.upload) Upload 
