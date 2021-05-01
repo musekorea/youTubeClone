@@ -1,11 +1,15 @@
 header.header 
-  .header_column 
+  .header_column.headerLogo
     a(href=routes.home)
       i.fab.fa-youtube
-  .header_column 
+      span MyTube
+  .header_column.headerFormContainer
     form(action=routes.search, method="get",)
-      input(type="text" placeholder="Search by term...",name="term")
-  .header_column 
+      input(class="headerInput" type="text" placeholder="Search by term...",name="term")
+      i.fas.fa-search
+      //링크처리 안되있음 
+        
+  .header_column.joinLogin
     ul    
       if !user.isAuthenticated
         li 

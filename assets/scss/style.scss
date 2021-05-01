@@ -1,7 +1,7 @@
-body {
-  background-color: red;
-}
-body:fullscreen {
-  width: 100vw;
-  height: 100vh;
-}
+@import 'config/var.scss';
+@import 'config/reset.scss';
+@import './main.scss';
+/*======partials=======*/
+@import './partials/header.scss';
+/*======pages=======*/
+@import './pages/home.scss';

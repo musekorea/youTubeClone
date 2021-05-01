@@ -4,8 +4,8 @@
   "description": "Cloneing Youtube with Vanilla JS &amp; Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node init.js",
-    "dev": "nodemon --exec babel-node init.js",
+    "start": "nodemon --exec babel-node  --ignore 'scss' init.js ",
+    "dev": "webpack --watch",
     "build": "webpack"
   },
   "repository": {
@@ -30,11 +30,12 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.13.10",
-    "@babel/core": "^7.13.13",
+    "@babel/core": "^7.14.0",
     "@babel/node": "^7.13.13",
-    "@babel/preset-env": "^7.13.12",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.14.0",
     "autoprefixer": "^10.2.5",
-    "babel-node": "*",
+    "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
     "eslint": "^7.24.0",
     "mini-css-extract-plugin": "^1.6.0",

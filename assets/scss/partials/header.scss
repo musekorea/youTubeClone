@@ -1,0 +1,37 @@
+.header {
+  width: 100%;
+  height: 60px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+.headerLogo {
+  font-weight: 600;
+  font-size: 20px;
+}
+.headerLogo i {
+  font-size: 50px;
+  color: $red;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.headerFormContainer {
+  border: 1px solid gray;
+}
+.headerInput {
+  width: 400px;
+  padding: 4px;
+  border: none;
+}
+
+.joinLogin ul {
+  display: flex;
+}
+.joinLogin ul li {
+  margin: 10px;
+}
